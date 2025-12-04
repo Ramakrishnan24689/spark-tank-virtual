@@ -687,6 +687,37 @@ graph TD
 - **Performance Targets**: <3 second load times, <500ms real-time updates
 - **User Experience**: Intuitive interface requiring minimal training
 
+## Assumptions & Open Questions
+
+### Technical Assumptions
+- **Participants Access**: Guest users access to SparkTank specific tenant will have access to resources (Need clarification: Do we have specific tenant for KickStarter team?)
+- **Development Environment**: Experienced developers using modern tools effectively
+- **Stakeholder Availability**: Daily feedback and validation from stakeholders
+- **Power Platform Environment**: Access to Power Platform environment with appropriate connectors
+
+### Open Questions for Resolution
+
+**1. SparkTank Card Activity Implementation:**
+- **Question**: During the SparkTank activity where we draw cards, do we envision that as a co-authoring in real-time ([Fluid Framework](https://fluidframework.com/)) style? Or will this be done on a common device by facilitator sharing their screen?
+- **Impact**: Affects Sprint 4 complexity and technical architecture
+- **Options**: 
+  - Real-time collaborative canvas (higher complexity, better UX)
+  - Facilitator-driven shared screen (simpler implementation, centralized control)
+
+**2. AI Summary Quality Assurance:**
+- **Question**: The AI Summary as an email for both winner and non-winning ideas - how to evaluate whether the summary was on point & relevant to their idea? Will a disclaimer be enough?
+- **Impact**: Affects Sprint 5 AI integration and user expectations
+- **Considerations**: 
+  - User feedback mechanism for AI summary quality
+  - Disclaimer about AI-generated content accuracy
+  - Human review process for critical summaries
+
+### Out of Scope
+- **Value-Benefits Calculation**: Complex screen to show combined/operational/strategic/transformation value metrics (need to understand requirements more if this should be in scope)
+- **Advanced Analytics**: Detailed ROI calculations and business impact modeling
+- **Enterprise Integration**: Advanced SSO and complex tenant management
+- **Mobile App**: Native mobile applications (web responsive only)
+
 ## Conclusion
 
 This implementation approach leverages modern development tools and Power Platform capabilities to deliver a production-ready SparkTank application in 2-2.5 weeks.
