@@ -1,24 +1,24 @@
-# SparkTank PowerApps Code App - AI-Accelerated Implementation Plan
+# SparkTank PowerApps Code App - Implementation Plan
 
 ## What We're Building
 A digital workshop platform that replaces paper-based AI ideation sessions with an interactive PowerApps experience. Teams join, submit ideas, vote, and get comprehensive summaries - all in real-time.
 
-## Why This Accelerated Timeline is Possible
+## Implementation Approach
 
-### AI-Powered Development Advantages
-- **GitHub Copilot**: 60-80% faster UI component generation
-- **Fluent UI Templates**: Pre-built Microsoft design system components
-- **PowerApps Code SDK**: Streamlined Dataverse integration
-- **Established Architecture**: Foundation already exists from previous work
-- **Connector Documentation**: Clear API patterns and examples
+### Development Foundation
+- **Modern Tech Stack**: React + TypeScript for robust, type-safe development
+- **Fluent UI Components**: Microsoft's design system for consistent user experience
+- **PowerApps Code SDK**: Streamlined Dataverse integration and deployment
+- **Power Platform Connectors**: Pre-built integrations for Teams and data management
+- **Existing Foundation**: Building on established architecture patterns
 
-### Modern Development Stack Benefits
+### Development Stack Benefits
 - **React + TypeScript**: Rapid prototyping with type safety
 - **Vite Hot Reload**: Instant feedback during development
 - **Component Libraries**: Reusable UI patterns
 - **Power Platform Integration**: Built-in enterprise features
 
-## Accelerated Implementation Approach
+## Implementation Timeline
 
 ### Sprint 1: Foundation & Team Management (3 days)
 **Goal**: Complete team formation with Microsoft Teams integration
@@ -39,7 +39,7 @@ A digital workshop platform that replaces paper-based AI ideation sessions with 
 - **Day 1**: Dataverse schema design and basic UI setup
   - Create Sessions, Teams, Participants tables
   - Set up relationships and security
-  - Begin UI development with Copilot
+  - Begin UI development for team formation
 - **Day 2**: Teams connector integration and enhanced UI
   - Implement TeamsService.createTeam() method
   - Implement TeamsService.addMemberToTeam() method
@@ -76,7 +76,7 @@ A digital workshop platform that replaces paper-based AI ideation sessions with 
 - **Timer Management**: Built into TimerService class with React state management
 
 **Day-by-Day Breakdown**:
-- **Day 1**: Idea submission forms with Copilot assistance
+- **Day 1**: Idea submission forms development
   - Build "Build Something Better" form
   - Build "Build Better Things" form
   - Implement form validation and error handling
@@ -117,7 +117,7 @@ A digital workshop platform that replaces paper-based AI ideation sessions with 
 
 **Day-by-Day Breakdown**:
 - **Day 1**: Voting interface development
-  - Professional voting cards with Copilot
+  - Professional voting cards interface
   - One-click voting mechanism
   - Vote confirmation and feedback
 - **Day 2**: Real-time counting and results
@@ -371,12 +371,14 @@ graph LR
 - Team Type: "Standard"
 - Privacy: "Private"
 - Description: "SparkTank Workshop Team - {SessionName}"
+- **Documentation**: [Create a Team Connector](https://learn.microsoft.com/en-us/connectors/teams/?tabs=text1%2Cdotnet#create-a-team)
 
 **Add Member to Team:**
 - Action: "Add a member to a team"
 - Team ID: {From Create Team response}
 - User ID: {From participant email/AAD lookup}
 - Role: "Member"
+- **Documentation**: [Add Member to Team Connector](https://learn.microsoft.com/en-us/connectors/teams/?tabs=text1%2Cdotnet#add-a-member-to-a-team)
 
 **Dataverse Connectors:**
 
@@ -384,12 +386,14 @@ graph LR
 - Environment: {Your Power Platform Environment}
 - Table: {Sessions/Teams/Participants/Ideas/Votes}
 - Data: {Dynamic content from forms/actions}
+- **Documentation**: [Add a New Row Connector](https://learn.microsoft.com/en-us/connectors/commondataserviceforapps/#add-a-new-row)
 
 **List Rows:**
 - Environment: {Your Power Platform Environment}
 - Table: {Relevant table}
 - Filter: {Session-specific or team-specific filters}
 - Order By: {Relevant sorting}
+- **Documentation**: [List Rows Connector](https://learn.microsoft.com/en-us/connectors/commondataserviceforapps/#list-rows)
 
 **Code Apps Service Implementation Examples**:
 ```typescript
@@ -529,23 +533,27 @@ class CardService {
 
 ## Development Acceleration Strategies
 
-### GitHub Copilot Integration
+## Development Best Practices
 
-**1. Component Generation:**
-   - Prompt: "Create Fluent UI card component for team selection"
-   - Copilot generates complete component with proper styling
+**1. Component-Based Development:**
+   - Build reusable Fluent UI components
+   - Maintain consistent styling and behavior
+   - Follow Microsoft design guidelines
 
 **2. Form Development:**
-   - Prompt: "Create idea submission form with validation"
-   - Generates form with TypeScript types and error handling
+   - Create structured form validation
+   - Implement proper error handling
+   - Ensure responsive design
 
-**3. Data Integration:**
-   - Prompt: "Create service to connect to Dataverse Add New Row"
-   - Generates complete API integration with error handling
+**3. Service Integration:**
+   - Create clean API abstractions
+   - Implement proper error handling
+   - Build efficient data access patterns
 
 **4. Real-time Updates:**
-   - Prompt: "Add polling for real-time vote counting"
-   - Generates state management and periodic refresh
+   - Implement polling for live data updates
+   - Manage state effectively
+   - Ensure smooth user experience
 
 ### Fluent UI Rapid Development
 
@@ -642,19 +650,19 @@ graph TD
     style P fill:#d1c4e9
 ```
 
-### Key Acceleration Factors
+### Key Development Factors
 
-**UI Development (60% faster with Copilot)**:
-- Component generation from natural language prompts
-- Automatic styling with Fluent UI integration
+**UI Development Efficiency**:
+- Component-based architecture for rapid development
+- Fluent UI integration for consistent experience
 - Built-in accessibility and responsiveness
 
-**Power Platform Integration (50% faster)**:
+**Power Platform Integration**:
 - Pre-built connectors with clear documentation
-- Power Automate visual flow design
+- Visual flow design capabilities
 - Automatic Dataverse relationship handling
 
-**Testing & Deployment (40% faster)**:
+**Testing & Deployment**:
 - Hot reload for immediate feedback
 - Built-in Power Platform deployment tools
 - Integrated debugging and error handling
@@ -674,7 +682,7 @@ graph TD
 ## Success Metrics
 
 ### Development Velocity
-- **UI Components**: 3-4 complete screens per day with Copilot
+- **UI Components**: 3-4 complete screens per day with modern tooling
 - **Connector Integration**: 1-2 connectors per day
 - **End-to-End Features**: 1 complete user flow every 2-3 days
 
@@ -685,12 +693,12 @@ graph TD
 
 ## Conclusion
 
-This AI-accelerated approach leverages modern development tools and Power Platform capabilities to deliver a production-ready SparkTank application in 2-2.5 weeks instead of the traditional 6-8 weeks.
+This implementation approach leverages modern development tools and Power Platform capabilities to deliver a production-ready SparkTank application in 2-2.5 weeks.
 
 The key success factors are:
-1. **AI-Assisted Development**: GitHub Copilot for rapid UI generation
+1. **Modern Development Stack**: React + TypeScript + Fluent UI for reliability
 2. **Pre-built Connectors**: Leverage existing Teams and Dataverse integrations
-3. **Modern Architecture**: React + TypeScript + Fluent UI for reliability
+3. **Component-Based Architecture**: Reusable patterns for consistent experience
 4. **Incremental Delivery**: Working features every 2-3 days for validation
 
-This timeline assumes experienced developers using AI tools effectively and stakeholders available for daily feedback and validation.
+This timeline assumes experienced developers using modern tools effectively and stakeholders available for daily feedback and validation.
