@@ -575,79 +575,75 @@ class CardService {
 
 ## Timeline Summary - AI-Accelerated
 
-### Total Duration: 15 days (December 5-19, 2025)
+### Total Duration: 11 business days (December 5-19, 2025)
 
-**Sprint 1 (3 days)**: Foundation & Teams Integration (Dec 5-7)
-**Sprint 2 (3 days)**: Idea Collection System (Dec 8-10)
-**Sprint 3 (3 days)**: Voting & Results (Dec 11-13)
-**Sprint 4 (3 days)**: SparkTank Card Activity (Dec 14-16)
-**Sprint 5 (3 days)**: AI Summary & Distribution (Dec 17-19)
+**Sprint 1 (2 business days)**: Foundation & Teams Integration (Dec 5-6)
+**Sprint 2 (3 business days)**: Idea Collection System (Dec 9-11)  
+**Sprint 3 (3 business days)**: Voting & Results (Dec 12-13, 16)
+**Sprint 4 (2 business days)**: SparkTank Card Activity (Dec 17-18)
+**Sprint 5 (1 business day)**: AI Summary & Distribution (Dec 19)
 
 ### Timeline - Execution Overview
 
 ```mermaid
 gantt
-    title SparkTank PowerApps Code App Development Timeline
+    title SparkTank PowerApps Code App Development Timeline (Business Days)
     dateFormat  YYYY-MM-DD
     axisFormat %m/%d
 
     section Sprint 1: Foundation
     Dataverse & UI Setup    :sprint1-1, 2025-12-05, 1d
     Teams Integration       :sprint1-2, 2025-12-06, 1d
-    Testing & Real-time     :sprint1-3, 2025-12-07, 1d
 
     section Sprint 2: Ideas
-    Idea Forms              :sprint2-1, 2025-12-08, 1d
-    Timer & Dashboard       :sprint2-2, 2025-12-09, 1d
-    Service Integration     :sprint2-3, 2025-12-10, 1d
+    Idea Forms              :sprint2-1, 2025-12-09, 1d
+    Timer & Dashboard       :sprint2-2, 2025-12-10, 1d
+    Service Integration     :sprint2-3, 2025-12-11, 1d
 
     section Sprint 3: Voting
-    Voting Interface        :sprint3-1, 2025-12-11, 1d
-    Real-time Results       :sprint3-2, 2025-12-12, 1d
-    Teams Notifications     :sprint3-3, 2025-12-13, 1d
+    Voting Interface        :sprint3-1, 2025-12-12, 1d
+    Real-time Results       :sprint3-2, 2025-12-13, 1d
+    Teams Notifications     :sprint3-3, 2025-12-16, 1d
 
     section Sprint 4: SparkTank Cards
-    Cards & Classification  :sprint4-1, 2025-12-14, 1d
-    AI & Collaboration      :sprint4-2, 2025-12-15, 1d
-    Integration & Export    :sprint4-3, 2025-12-16, 1d
+    Cards & Classification  :sprint4-1, 2025-12-17, 1d
+    AI & Collaboration      :sprint4-2, 2025-12-18, 1d
 
     section Sprint 5: Summary
-    Summary Generation      :sprint5-1, 2025-12-17, 1d
-    AI & Email Integration  :sprint5-2, 2025-12-18, 1d
-    Analytics & Polish      :sprint5-3, 2025-12-19, 1d
+    Summary & Polish        :sprint5-1, 2025-12-19, 1d
 ```
 
 ### Daily Sprint Breakdown
 
 ```mermaid
 graph TD
-    A[Dec 5: Dataverse & UI Setup] --> B[Dec 6: Teams Integration]
-    B --> C[Dec 7: Testing & Real-time]
+    A[Dec 5 Thu: Dataverse & UI Setup] --> B[Dec 6 Fri: Teams Integration]
     
-    C --> D[Dec 8: Idea Forms]
-    D --> E[Dec 9: Timer & Dashboard]
-    E --> F[Dec 10: Service Integration]
+    B -.-> C[Weekend Break]
+    C -.-> D[Dec 9 Mon: Idea Forms]
     
-    F --> G[Dec 11: Voting Interface]
-    G --> H[Dec 12: Real-time Results]
-    H --> I[Dec 13: Teams Notifications]
+    D --> E[Dec 10 Tue: Timer & Dashboard]
+    E --> F[Dec 11 Wed: Service Integration]
+    F --> G[Dec 12 Thu: Voting Interface]
+    G --> H[Dec 13 Fri: Real-time Results]
     
-    I --> J[Dec 14: Cards & Classification]
-    J --> K[Dec 15: AI & Collaboration]
-    K --> L[Dec 16: Integration & Export]
+    H -.-> I[Weekend Break]
+    I -.-> J[Dec 16 Mon: Teams Notifications]
     
-    L --> M[Dec 17: Summary Generation]
-    M --> N[Dec 18: AI & Email Integration]
-    N --> O[Dec 19: Analytics & Polish]
+    J --> K[Dec 17 Tue: Cards & Classification]
+    K --> L[Dec 18 Wed: AI & Collaboration]
+    L --> M[Dec 19 Thu: Summary & Polish]
     
-    O --> P[Dec 20: Production Ready!]
+    M --> N[Dec 19: Production Ready!]
     
     style A fill:#e1f5fe
     style D fill:#f3e5f5
     style G fill:#fff3e0
-    style J fill:#e8f5e8
+    style K fill:#e8f5e8
     style M fill:#ffebee
-    style P fill:#d1c4e9
+    style N fill:#d1c4e9
+    style C fill:#f0f0f0
+    style I fill:#f0f0f0
 ```
 
 ### Key Development Factors
